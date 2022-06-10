@@ -9,4 +9,4 @@ before_install:
   - docker build -t testing -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true testing npm run test
+  - docker RUN -e CI=true testing npm run test
